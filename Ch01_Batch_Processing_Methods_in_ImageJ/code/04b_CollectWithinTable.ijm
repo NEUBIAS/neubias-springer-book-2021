@@ -14,32 +14,42 @@
 
 
 //create empty collector array
-collect_nNuclei = newArray();
+//collect_nNuclei = newArray();
+Table.create("Numbers");
+rowIndex = 0;
 
 //processFolder function with the collector array as output
-collect_nNuclei = processFolder(input, collect_nNuclei);
+processFolder(input);
 
 //do something with the collected values: calculate statistiics
-Array.getStatistics(collect_nNuclei, min, max, mean, stdDev);
-print("In average, there were " + mean + " +- " + stdDev + " nuclei analyzed in an image (number of images=" + collect_nNuclei.length + ")." );
+close("Results");
+selectWindow("Numbers");
+Table.update;
+Table.rename("Numbers", "Results");
+run("Summarize");
+
+//Array.getStatistics(collect_nNuclei, min, max, mean, stdDev);
+//print("In average, there were " + mean + " +- " + stdDev + " nuclei analyzed in an image (number of images=" + collect_nNuclei.length + ")." );
 
 // function to scan folders/subfolders/files to find files with correct suffix
-function processFolder(input, collect_nNuclei) {
+function processFolder(input) {
 	list = getFileList(input);
 	list = Array.sort(list);
-	
 	
 	for (i = 0; i < list.length; i++) {
 		if(File.isDirectory(input + File.separator + list[i]))
 			collect_nNuclei = processFolder(input + File.separator + list[i], collect_nNuclei);
 		if(endsWith(list[i], suffix)){
 			nNuclei = processFile(input, output, list[i]);
-			collect_nNuclei = Array.concat(collect_nNuclei , nNuclei);
-			print("The collecting array collect_nNuclei now contains: ");
-			Array.print(collect_nNuclei);
+			selectWindow("Numbers");
+			Table.set("nNuclei", rowIndex++, nNuclei);
+
+			//collect_nNuclei = Array.concat(collect_nNuclei , nNuclei);
+			//print("The collecting array collect_nNuclei now contains: ");
+			//Array.print(collect_nNuclei);
 		}
 	}
-	return collect_nNuclei;
+	//return collect_nNuclei;
 	
 
 }
