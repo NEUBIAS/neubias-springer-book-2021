@@ -8,7 +8,7 @@
  * 
 */
 
-#@ File (label = "Input directory", style = "directory") input
+#@ File (label = "Input file", style = "open") input
 //#@ File input // = alternative
 #@ File (label = "Output directory", style = "directory") output
 #@ String (label = "File suffix", value = ".tiff") suffix
