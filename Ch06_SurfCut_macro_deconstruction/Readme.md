@@ -19,11 +19,9 @@ This repository contains the code solution to the exercises proposed in the chap
 > Erguvan, O., Louveaux, M., Hamant, O., Verger, S. (2019) ImageJ SurfCut: a user-friendly pipeline for high-throughput extraction of cell contours from 3D image stacks. BMC Biology, 17:38. https://doi.org/10.1186/s12915-019-0657-1 
 
 ### Additional sample data described in exercise 3 can be found below:
-> Use case 1: https://zenodo.org/record/3981193#.Xzo8pTU6-60 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3981193.svg)](https://doi.org/10.5281/zenodo.3981193)
+> Use case 1: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3981193.svg)](https://doi.org/10.5281/zenodo.3981193)
 
-> Use case 2: https://zenodo.org/record/4114074#.X5AJAe06-60
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4114074.svg)](https://doi.org/10.5281/zenodo.4114074)
+> Use case 2: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4114074.svg)](https://doi.org/10.5281/zenodo.4114074)
 
 > Use case 3: https://cloud.biohpc.swmed.edu/index.php/s/Z9j62w2FCareyJY/download
 
