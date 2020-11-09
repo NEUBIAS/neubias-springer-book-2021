@@ -25,7 +25,8 @@ This repository contains the code solution to the exercises proposed in the chap
 
 > Use case 3: https://cloud.biohpc.swmed.edu/index.php/s/Z9j62w2FCareyJY/download
 
-> Use case 4: (to be added)
+> Use case 4: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4244952.svg)](https://doi.org/10.5281/zenodo.4244952)
+
 
 
 ### The writing of this book chapter also prompted us to develop a new version of the SurfCut macro, including a complete refactoring of the code (as descibed in this book chapter), bug fixes and new functions. https://github.com/VergerLab/SurfCut2 
