@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bercowskya/neubias-springer-book-2021/ba8e84f8d8ea25341a3775565c4b1b08576c20f6)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bercowskya/neubias-springer-book-2021/273abea9640a0d15c8a0959c2b8c0872863bbfa7)
 
 # Chapter 2: Python - Data Handling, Analysis and Plotting
 
