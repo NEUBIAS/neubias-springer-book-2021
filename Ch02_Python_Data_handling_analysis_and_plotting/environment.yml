@@ -1,0 +1,10 @@
+name: pychapter-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - pandas
+  - pyviz
+  - bokeh
+  - holoviews
+  - datetime
