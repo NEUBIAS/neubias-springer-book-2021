@@ -11,3 +11,5 @@ When performing an image analysis pipeline, a programming language like Python i
 to create interactive figures. 
 - NB-4-Holoviews\_Plotting.ipynb : This notebook covers section 2.4, specifically 2.4.1 - using ``Holoviews`` to create interactive figures.
 \end{enumerate}
+
+In case you do not want to install Anaconda or any of the packages, you can still follow the chapter using the notebooks using Binder (See the link at the beginning of this file). 
