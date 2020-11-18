@@ -17,3 +17,5 @@ The overview is as follows with script-automated and user interactive parts indi
     * Batch processing into multifolder
 
 Happy quantifying!
+
+All code and data here are under the MIT License.
