@@ -16,13 +16,13 @@ print(imgName);
 imgPath = imgDir+imgName;
 print(imgPath);
 
-///SurfCut Workflow User-Difined Functions
-Preprocessing(); //Component1
+///SurfCut Workflow User-Defined Functions
+8BitConversion(); //Component1
 Denoising(Rad); //Component2
-Thresholding(Thld); //Component3
+Binarization(Thld); //Component3
 EdgeDetection(imgName); //Component4
 ZAxisShifting(Cut1, Cut2); //Component5a
-StackCropping(imgPath, imgName); //Component5b
+Masking(imgPath, imgName); //Component5b
 ZProjections(imgName); //Component6
 
 ///End
@@ -31,7 +31,7 @@ print("=== Done ===");
 
 ///Functions
 //=Component1=//
-function Preprocessing(){
+function 8BitConversion(){
 	print ("Pre-processing");
 	run("8-bit");
 };
@@ -44,7 +44,7 @@ function Denoising(Rad){
 };
 
 //=Component3=//
-function Thresholding(Thld){
+function Binarization(Thld){
 	//Object segmentation (uses the variable Thld to define the threshold applied)
 	print ("Threshold segmentation");
 	setThreshold(0, Thld);
@@ -107,7 +107,7 @@ function ZAxisShifting(Cut1, Cut2){
 };
 
 //=Component5b=//
-function StackCropping(imgPath, imgName){
+function Masking(imgPath, imgName){
 	print ("Cropping stack");
 	//Open raw image
 	open(imgPath);
