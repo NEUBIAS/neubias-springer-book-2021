@@ -1,15 +1,15 @@
 //=Component1=// 8bit conversion
 run("8-bit");
 
-//=Component2=// Gaussian Blur
+//=Component2=// Denoising
 run("Gaussian Blur...", "sigma=&Rad stack");
 	
-//=Component3=// Threshold
+//=Component3=// Binarization
 setThreshold(0, Thld);
 run("Convert to Mask", "method=Default background=Light");
 run("Invert", "stack");
 
-//=Component4=// Edge detect
+//=Component4=// Edge detection
 print (slices);
 for (img=0; img<slices; img++){
 	print("Edge detect projection" + img + "/" + slices);
@@ -23,7 +23,7 @@ wait(1000);
 selectWindow(list[j]);
 close();
 
-//=Component5=// mask Z-shift and signal cropping
+//=Component5=// Masking
 //Substraction2
 print("Substraction2");
 selectWindow("Stack");
@@ -45,6 +45,6 @@ selectWindow("Result of Stack-1");
 run("Invert", "stack");
 imageCalculator("Subtract create stack", "Stack-2","Result of Stack-1");
 
-//=Component6=//Z Max intensity projection
+//=Component6=//Z projection
 print("Project and save SurfCutProj"); 
 run("Z Project...", "projection=[Max Intensity]");
