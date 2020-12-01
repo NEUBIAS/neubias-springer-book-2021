@@ -17,7 +17,7 @@ imgPath = imgDir+imgName;
 print(imgPath);
 
 ///SurfCut Workflow User-Defined Functions
-8BitConversion(); //Component1
+BitConversion(); //Component1
 Denoising(Rad); //Component2
 Binarization(Thld); //Component3
 EdgeDetection(imgName); //Component4
@@ -31,7 +31,7 @@ print("=== Done ===");
 
 ///Functions
 //=Component1=//
-function 8BitConversion(){
+function BitConversion(){
 	print ("Pre-processing");
 	run("8-bit");
 };
